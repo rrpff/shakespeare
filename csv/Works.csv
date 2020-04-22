@@ -1,0 +1,44 @@
+WorkID	Title	LongTitle	ShortTitle	Date	GenreType	Notes	Source	TotalWords	TotalParagraphs
+12night	Twelfth Night	Twelfth Night, Or What You Will	12Night	1599	c		Moby	19837	1031
+allswell	All's Well That Ends Well	All's Well That Ends Well	AWW	1602	c		Moby	23009	1034
+antonycleo	Antony and Cleopatra	Antony and Cleopatra	Antony	1606	t		Moby	24905	1361
+asyoulikeit	As You Like It	As You Like It	AYLI	1599	c		Gutenberg	21690	872
+comedyerrors	Comedy of Errors	The Comedy of Errors	Errors	1589	c		Moby	14701	664
+coriolanus	Coriolanus	Coriolanus	Coriolanus	1607	t		Moby	27589	1240
+cymbeline	Cymbeline	Cymbeline, King of Britain	Cymbeline	1609	t		Moby	27565	979
+hamlet	Hamlet	The Tragedy of Hamlet, Prince of Denmark	Hamlet	1600	t		Gutenberg	30557	1250
+henry4p1	Henry IV, Part I	History of Henry IV, Part I	Henry4p1	1597	h		Moby	24579	884
+henry4p2	Henry IV, Part II	History of Henry IV, Part II	Henry4p2	1597	h		Gutenberg	25689	987
+henry5	Henry V	History of Henry V	Henry5	1598	h		Moby	26119	853
+henry6p1	Henry VI, Part I	History of Henry VI, Part I	Henry6p1	1591	h		Moby	21607	787
+henry6p2	Henry VI, Part II	History of Henry VI, Part II	Henry6p2	1590	h		Moby	25439	921
+henry6p3	Henry VI, Part III	History of Henry VI, Part III	Henry6p3	1590	h		Moby	24294	949
+henry8	Henry VIII	History of Henry VIII	Henry8	1612	h		Moby	24629	788
+juliuscaesar	Julius Caesar	The Tragedy of Julius Caesar	Caesar	1599	t		Moby	19703	895
+kingjohn	King John	History of King John	John	1596	h		Moby	20772	621
+kinglear	King Lear	The Tragedy of King Lear	Lear	1605	t		Gutenberg	26145	1181
+loverscomplaint	Lover's Complaint	A Lover's Complaint	Complaint	1609	p		Moby	2559	47
+loveslabours	Love's Labour's Lost	Love's Labour's Lost	LLL	1594	c		Moby	21459	1123
+macbeth	Macbeth	The Tragedy of Macbeth	Macbeth	1605	t		Moby	17121	765
+measure	Measure for Measure	Measure for Measure	Measure	1604	c		Moby	21780	987
+merchantvenice	Merchant of Venice	The Merchant of Venice	Merchant	1596	c		Moby	21291	722
+merrywives	Merry Wives of Windsor	The Merry Wives of Windsor	Wives	1600	c		Moby	21845	1163
+midsummer	Midsummer Night's Dream	A Midsummer Night's Dream	MND	1595	c		Moby	16511	605
+muchado	Much Ado about Nothing	Much Ado about Nothing	Ado	1598	c		Moby	21157	1062
+othello	Othello	The Tragedy of Othello, Moor of Venice	Othello	1604	t		Moby	26450	1309
+passionatepilgrim	Passionate Pilgrim	The Passionate Pilgrim	Pilgrim	1598	p		Moby	3124	43
+pericles	Pericles	Pericles, Prince of Tyre	Pericles	1608	h		Moby	18529	756
+phoenixturtle	Phoenix and the Turtle	The Phoenix and the Turtle	Phoenix	1601	p		Moby	353	19
+rapelucrece	Rape of Lucrece	The Rape of Lucrece	Lucrece	1594	p		Moby	15003	269
+richard2	Richard II	History of Richard II	Richard2	1595	h		Moby	22423	636
+richard3	Richard III	History of Richard III	Richard3	1592	h		Moby	29278	1224
+romeojuliet	Romeo and Juliet	The Tragedy of Romeo and Juliet	Romeo	1594	t		Moby	24553	990
+sonnets	Sonnets	Sonnets	Sonnets	1609	s		Moby	17515	154
+tamingshrew	Taming of the Shrew	The Taming of the Shrew	Shrew	1593	c		Gutenberg	21055	965
+tempest	Tempest	The Tempest	Tempest	1611	c		Moby	16633	702
+timonathens	Timon of Athens	The Tragedy of Timon of Athens	Timon	1607	t		Moby	18216	870
+titus	Titus Andronicus	Titus Andronicus	Titus	1593	t		Moby	20743	662
+troilus	Troilus and Cressida	Troilus and Cressida	Troilus	1601	t		Moby	26089	1301
+twogents	Two Gentlemen of Verona	Two Gentlemen of Verona	2Gents	1594	c		Moby	17129	943
+venusadonis	Venus and Adonis	Venus and Adonis	Venus	1593	p		Moby	9870	202
+winterstale	Winter's Tale	The Winter's Tale	WT	1610	c		Moby	24914	814

@@ -1,0 +1,10 @@
+AnnotationID	AnnotationThreadID	ChildOf	UserID	Comment	ExternalLink_URL	MediaID	StartAt	Created
+1	1	0	1	Do dirty work, be put upon.   		0	NULL	2013-01-19 03:05:45
+2	2	0	2	A fourfold pun: <em>hind</em> means "servant" and "female deer," and <em>heartless</em> means "without feelings" and "without harts" (male deer). This play is packed with phrases that carry two or more meanings, often bawdy.  		0	NULL	2013-01-19 03:05:53
+3	3	0	3	I will pay for that teaching: i.e., I will have you convinced that you are wrong.  		0	NULL	2013-01-19 03:06:00
+5	4	0	1	Honest confession.		0	NULL	2013-01-19 03:06:09
+6	5	0	2	Montague hopes that Romeo will confess his troubles to Benvolio. 		0	NULL	2013-01-19 03:06:23
+7	6	0	3	Let us leave swiftly. 	NULL	NULL	NULL	2013-01-20 21:03:19
+8	7	0	3	In remaining here. 	NULL	NULL	NULL	2013-01-21 00:28:15
+9	8	NULL	2	Benvolio protests that he does not wish to fight, and invites Tybalt to help him break it up. 	NULL	NULL	NULL	2013-01-28 01:52:27
+10	9	NULL	3	BBC Shakespeare: Romeo and Juliet (1978)	http://opensourceshakespeare.org/views/plays/annotation-video.php?Work=romeojuliet&Section=1&Chapter=1&Paragraph=101	0	NULL	2013-01-30 04:08:19
