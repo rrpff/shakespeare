@@ -1,42 +1,11 @@
-const { readFile, readdir, writeFile } = require("fs").promises
-const { join, relative, basename } = require("path")
+const { writeFile } = require("fs").promises
+const { join, relative } = require("path")
 const { green } = require("chalk")
 const mkdirp = require("mkdirp")
-const csv = require("neat-csv")
+const { sortBy, loadData } = require("./utils")
 
 const ROOT_DIR = join(__dirname, "..")
-const CSV_INPUT_DIR = join(ROOT_DIR, "csv")
 const JSON_OUTPUT_DIR = join(ROOT_DIR, "json")
-
-const camelCase = str => str[0].toLowerCase() + str.slice(1)
-const sortBy = keys => (a, b) => {
-  if (keys.length === 0) return 0
-  if (a[keys[0]] < b[keys[0]]) return -1
-  if (a[keys[0]] > b[keys[0]]) return 1
-
-  return sortBy(keys.slice(1))(a, b)
-}
-
-const fileList = async dir =>
-  (await readdir(CSV_INPUT_DIR)).map(f => basename(f, ".csv"))
-
-const loadFile = async name => {
-  const fpath = join(CSV_INPUT_DIR, name + ".csv")
-  const contents = await readFile(fpath)
-  const results = await csv(contents, { separator: "\t" })
-
-  return results
-}
-
-const loadData = async () => {
-  const names = await fileList()
-  const contents = await Promise.all(names.map(loadFile))
-
-  return names.reduce((acc, name, i) => ({
-    ...acc,
-    [camelCase(name)]: contents[i]
-  }), {})
-}
 
 const linesJson = text => {
   return text.split(/\\n/g).reduce((acc, l) => {
