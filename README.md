@@ -2,11 +2,17 @@
 
 Needed this data in a structured form easy to develop with. Raw data is in `raw`, processed output is in `structured` and `csv`. If you ever need help using this, let me know!
 
+## About the data
+
+- Credit to [Open Source Shakespeare](opensourceshakespeare.org) where it's available as a SQL dump
+- The data in `csv` has been derived directly from this, with very minimal cleanup (quotes are fixed). A few of the original tables which were site-specific have been excluded
+- The data in `json` is separated into a file per 'work' and split into cross referenced chapters and paragraphs
+
 ## Development
 
 ### Generating CSVs
 
-Install docker and run the following to generate CSVs from the [data set](#credits):
+Install docker and run the following to generate CSVs:
 
 ```sh
 docker run --name shakespeare_db -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=shakespeare -d mysql
@@ -19,6 +25,16 @@ docker cp shakespeare_db:/project/csv ./csv
 
 This will output them all in `./csv`
 
-## Credits
+### Generating JSON
 
-[https://opensourceshakespeare.org](opensourceshakespeare.org) for providing the data. See: [https://opensourceshakespeare.org/downloads/](https://opensourceshakespeare.org/downloads/)
+Generate the CSVs as above
+
+Install nodejs and run the following to generate JSON:
+
+```sh
+npm run generate-json
+```
+
+## Acknowledgements
+
+- [Open Source Shakespeare](opensourceshakespeare.org) for providing the data. See: [https://opensourceshakespeare.org/downloads/](https://opensourceshakespeare.org/downloads/)

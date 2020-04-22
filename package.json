@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "generate-json": "node scripts/generateJson.js"
+  },
+  "devDependencies": {
+    "chalk": "^4.0.0",
+    "mkdirp": "^1.0.4"
+  },
+  "dependencies": {
+    "neat-csv": "^5.2.0"
+  }
+}
