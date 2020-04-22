@@ -1,9 +1,0 @@
-MediaTypeID	MediaType_Description	FileExtensions	MediaSpecies	MIME_Type
-mp3	MP3 audio	mp3	audio	NULL
-mp4	MPEG4 video	mp4	video	NULL
-jpeg	JPEG (image)	jpg,jpeg	image	NULL
-png	PNG (image)	png	image	NULL
-gif	GIF (image)	gif	image	NULL
-pdf	PDF (document)	pdf	document	NULL
-xml	XML (document)	xml	document	NULL
-word	Microsoft Word document	doc,docx	document	NULL
