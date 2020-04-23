@@ -19,8 +19,8 @@ const fileList = async dir =>
 
 const loadCsvFile = async name => {
   const fpath = join(CSV_INPUT_DIR, name + ".csv")
-  const contents = await readFile(fpath)
-  const results = await csv(contents, { separator: "\t" })
+  const contents = (await readFile(fpath)).toString()
+  const results = await csv(contents, { separator: "\t", quote: "" })
 
   return results
 }
