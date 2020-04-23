@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "generate-json": "node scripts/generateJson.js"
+    "generate-json": "node scripts/generateJson.js",
+    "generate-html": "node scripts/generateHtml.js"
   },
   "devDependencies": {
     "chalk": "^4.0.0",

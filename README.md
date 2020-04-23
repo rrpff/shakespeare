@@ -5,8 +5,9 @@ Needed this data in a structured form easy to develop with. Raw data is in `raw`
 ## About the data
 
 - Credit to [Open Source Shakespeare](opensourceshakespeare.org) where it's available as a SQL dump
-- The data in `csv` has been derived directly from this, with very minimal cleanup (quotes are fixed). A few of the original tables which were site-specific have been excluded
-- The data in `json` is separated into a file per 'work' and split into cross referenced chapters and paragraphs
+- The files in `csv` have been derived directly from this, with very minimal cleanup (quotes and apostrophes are fixed). A few of the original tables which were site-specific have been excluded
+- The files in `json` are separated into a file per 'work' and split into chapters and paragraphs
+- The files in `html` are generated using the JSON files
 
 ## Development
 
@@ -24,14 +25,20 @@ docker exec -w /project shakespeare_db sh -c './scripts/generate_csvs.sh'
 
 This will output them all in `./csv`
 
-### Generating JSON
+### Generating JSON + HTML
 
 Generate the CSVs as above
 
-Install nodejs and run the following to generate JSON:
+Install nodejs and run this to generate JSON:
 
 ```sh
 npm run generate-json
+```
+
+Then this to generate HTML:
+
+```sh
+npm run generate-html
 ```
 
 ## Acknowledgements
