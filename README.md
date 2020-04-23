@@ -1,6 +1,6 @@
 # Shakespeare
 
-Needed this data in a structured form easy to develop with. Raw data is in `raw`, processed output is in `structured` and `csv`. If you ever need help using this, let me know!
+Needed this data in a structured form easy to develop with. Raw data is in `raw`, slightly cleaner data is in `csv`, processed output is in `json` and `html`. If you need help using this, let me know, the code is a hacky mess but the output is alright :)
 
 ## About the data
 
@@ -10,17 +10,16 @@ Needed this data in a structured form easy to develop with. Raw data is in `raw`
 
 ## Development
 
+Will hopefully not need to use these instructions 🤞
+
 ### Generating CSVs
 
-Install docker and run the following to generate CSVs:
+Install docker and run this to generate CSVs:
 
 ```sh
-docker run --name shakespeare_db -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=shakespeare -d mysql
-docker exec shakespeare_db mkdir -p /project/csv
-docker cp raw/dump.sql shakespeare_db:/project/dump.sql
-docker cp scripts/generate_csvs.sh shakespeare_db:/project/generate_csvs.sh
-docker exec -w /project shakespeare_db sh -c './generate_csvs.sh'
-docker cp shakespeare_db:/project/csv ./csv
+rm csv/*.csv
+docker run --name shakespeare_db -e MYSQL_USER=root -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=shakespeare -v $(pwd):/project -d mysql --secure-file-priv /project/csv 
+docker exec -w /project shakespeare_db sh -c './scripts/generate_csvs.sh'
 ```
 
 This will output them all in `./csv`
