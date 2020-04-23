@@ -17,7 +17,7 @@ const sortBy = keys => (a, b) => {
 const fileList = async dir =>
   (await readdir(CSV_INPUT_DIR)).map(f => basename(f, ".csv"))
 
-const loadFile = async name => {
+const loadCsvFile = async name => {
   const fpath = join(CSV_INPUT_DIR, name + ".csv")
   const contents = await readFile(fpath)
   const results = await csv(contents, { separator: "\t" })
@@ -27,7 +27,7 @@ const loadFile = async name => {
 
 const loadData = async () => {
   const names = await fileList()
-  const contents = await Promise.all(names.map(loadFile))
+  const contents = await Promise.all(names.map(loadCsvFile))
 
   return names.reduce((acc, name, i) => ({
     ...acc,
@@ -39,6 +39,6 @@ module.exports = {
   camelCase,
   sortBy,
   fileList,
-  loadFile,
+  loadCsvFile,
   loadData,
 }

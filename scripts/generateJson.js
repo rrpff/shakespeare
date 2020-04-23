@@ -37,7 +37,7 @@ const chapterJson = (chapter, data) => {
   return {
     sectionNumber: Number(chapter.Section),
     chapterNumber: Number(chapter.Chapter),
-    description: chapter.Description,
+    description: ["---", "---\\n"].includes(chapter.Description) ? null : chapter.Description,
     paragraphs: data.paragraphs
       .filter(p => p.Section === chapter.Section && p.Chapter === chapter.Chapter)
       .map(p => paragraphJson(p, data))
