@@ -39,7 +39,9 @@ const chapterJson = (chapter, data) => {
     chapterNumber: Number(chapter.Chapter),
     description: ["---", "---\\n"].includes(chapter.Description) ? null : chapter.Description,
     paragraphs: data.paragraphs
-      .filter(p => p.Section === chapter.Section && p.Chapter === chapter.Chapter)
+      .filter(p => p.WorkID === chapter.WorkID)
+      .filter(p => p.Section === chapter.Section)
+      .filter(p => p.Chapter === chapter.Chapter)
       .map(p => paragraphJson(p, data))
       .sort(sortBy(["number"]))
   }
