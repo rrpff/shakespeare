@@ -6,7 +6,7 @@ Raw data is in `raw`, slightly cleaner data is in `csv`, processed output is in 
 
 ## About the data
 
-- Credit to [Open Source Shakespeare](opensourceshakespeare.org) where it's available as a SQL dump
+- Credit to [Open Source Shakespeare](https://opensourceshakespeare.org) where it's available as a SQL dump
 - The files in `csv` have been derived directly from this, with very minimal cleanup (quotes and apostrophes are fixed). A few of the original tables which were site-specific have been excluded
 - The files in `json` are separated into a file per 'work' and split into chapters and paragraphs
 - The files in `html` are generated using the JSON files
@@ -110,4 +110,4 @@ npm run generate-html
 
 ## Acknowledgements
 
-- [Open Source Shakespeare](opensourceshakespeare.org) for providing the data. See: [https://opensourceshakespeare.org/downloads/](https://opensourceshakespeare.org/downloads/)
+- [Open Source Shakespeare](https://opensourceshakespeare.org) for providing the data. See: [https://opensourceshakespeare.org/downloads/](https://opensourceshakespeare.org/downloads/)
