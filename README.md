@@ -17,7 +17,8 @@ Each file has a structure like:
 
 ```json
 {
-  "id": "12night", // Open Source Shakespeare work identifier, and the name of the JSON file
+  "//1": "Open Source Shakespeare work identifier, and the name of the JSON file",
+  "id": "12night",
   "title": "Twelfth Night",
   "longTitle": "Twelfth Night, Or What You Will",
   "date": "1599",
@@ -28,15 +29,17 @@ Each file has a structure like:
     {
       "sectionNumber": 1,
       "chapterNumber": 1,
-      "description": "DUKE ORSINO's palace.", // can be null
+      "//2": "description can be null",
+      "description": "DUKE ORSINO's palace.",
       "paragraphs": [
         {
           "number": 1,
           "lines": [
             "[Enter DUKE ORSINO, CURIO, and other Lords; Musicians attending]"
           ],
-          "type": "STAGE_DIRECTION", // can be "STAGE_DIRECTION" or "DIALOGUE"
-          "speaker": null // will be null when "STAGE_DIRECTION"
+          "//3": "type can be 'STAGE_DIRECTION' or 'DIALOGUE'. will be null for the former",
+          "type": "STAGE_DIRECTION",
+          "speaker": null
         },
         {
           "number": 2,
@@ -62,7 +65,7 @@ Each file has a structure like:
             "name": "Orsino",
             "abbreviatedName": "DUKE ORSINO",
             "appearsInWorks": [
-              "12night" // Open Source Shakespeare work identifier, and the name of the JSON file
+              "12night"
             ],
             "description": "Duke of Illyria"
           }
